@@ -4,7 +4,7 @@ These Lean 4 files prove lemmas of the conjecture desk (CGandGameEngineLearner/g
 
 Layout: `overtaken-proofs/<registered path of the proof file>`. The files are not part of the build of this repository.
 
-Count: 274 proofs (all problems of the desk). Where a file reuses a merged community proof, the note names it.
+Count: 273 proofs (all problems of the desk). Where a file reuses a merged community proof, the note names it.
 
 | Problem | Lemma | File | Accepted upstream via | Note |
 |---|---|---|---|---|
@@ -280,5 +280,4 @@ Count: 274 proofs (all problems of the desk). Where a file reuses a merged commu
 | goldbach | `L-goldbach-explicit-modeled-major-floor` | `lean/Conjectures/Goldbach/ExplicitModeledMajorFloor.lean` | PR #3640 | For every even n at least 1000000, the real part of the Ramanujan-weighted major-arc model, the sum over q from 1 to (log2(n+2))^2 of (ram(q,1)/phi(q))^2 * conj(ram(q,n)) times the kernel mass of the Dirichlet kernel on /beta/ <= Q/(q n), is at least n/72. The coefficient c(q) is multiplicative with c(p)=1/(p-1) if p divides n and -1/(p-1)^2 otherwise, and vanishes off squarefree q; it factors as  |
 | goldbach | `L-goldbach-deep-three-quarters-from-farey-error` | `lean/Conjectures/Goldbach/DeepThreeQuartersFromFareyError.lean` | PR #3578 | The statement assumes the uniform Friedlander-Goldston type bound (1.15) for the log-weighted prime exponential sum S near a/q + beta (q up to sqrt n, /beta/ up to 1/(q sqrt n), error K sqrt(qn) log n (log n + sqrt(n/beta/))), and concludes that for every eta > 0 and all large n the sum has modulus at most n^(3/4+eta) off the wide arcs (q up to n^(1/3), width H/(qn)). The proof takes a Dirichlet a |
 | goldbach | `L-goldbach-explicit-major-progression-budget` | `lean/Conjectures/Goldbach/ExplicitMajorProgressionBudget.lean` | ? | For every n at least 1000000 the statement asserts that the norm of the difference between the major-arc integral of S(t)^2 E(-n t) over the union of the rational windows (q at most Q, width Q/(q n)) and the modeled major term is at most the sum over windows of the integral of the prefix cost built from the progression discrepancy. The proof first shows the windows are pairwise disjoint (since 2 Q |
-| goldbach | `L-goldbach-major-fixed-144` | `lean/Conjectures/Goldbach/MajorFixed144.lean` | PR #3120 |  |
 | goldbach | `L-goldbach-low-skirt-from-short-progressions` | `lean/Conjectures/Goldbach/LowSkirtFromShortProgressions.lean` | PR #3605 | The statement asserts that a short-progression mean estimate (an integral over y in [x,2x] of the sum over moduli q up to Q of the maximal deviation of prime-log sums in windows of length x^t from h/phi(q), for 5/8 <= t <= 1 and Q^2 x^((1-t)/3+1/16) <= x^t, bounded by C x x^t/(log x)^18) implies that the real part of the low-modulus skirt integral of S(t)^2 e(-nt) over the wide arcs minus the majo |
